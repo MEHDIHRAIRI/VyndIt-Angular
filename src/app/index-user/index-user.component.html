@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">VyndIt</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['add/user']">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['addstore']" style="margin-right: 20px;">add Store</button>
+      Hello, <a id="username"  [routerLink]="['/profile']">{{usrname}}</a><a style="margin-left: 15px;"  [routerLink]="['/']">Logout</a>
+      
+  </div>
+  </div>
+</nav><br><br><br>
+<!-- search -->
+<form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+  <i class="fas fa-search" aria-hidden="true"></i>
+  <input [(ngModel)]="searchName" class="form-control form-control-sm ml-3 w-75" name="searchName"   type="text"  placeholder="Search"
+    aria-label="Search" style="color:green; height: 50px;" >
+</form><br><br><br>
+<!-- search -->
+
+<!-- Card -->
+<div class="container-fluid content-row" >
+  <div class="row">
+<div   *ngFor="let store of stores | seachstore:searchName"  style="margin-right: 20px; margin-left: 35px;">
+
+  <!-- Card content -->
+ 
+    <div class="card" style="width: 20rem; margin-top: 70px;">
+      <img src="https://media.istockphoto.com/photos/clothes-shop-interior-picture-id901863672?k=6&m=901863672&s=612x612&w=0&h=-_sWo8B6OJRaj4OuwblW8ytajBnBY_UMuaXGjr95wrE="  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <h3 class="card-text">{{store.name}}</h3><br>
+        <h6 class="card-subtitle mb-2 text-muted"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lightning" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"/>
+        </svg> {{store.type}}  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>{{store.address}}</h6><br>
+        <a [routerLink]="['/detailed/',store?.id]" class="btn btn-primary" >More Details</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+<!-- Card -->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>

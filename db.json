@@ -1,0 +1,210 @@
+{
+  "user": [
+    {
+      "username": "jhk",
+      "fullname": "ghjk",
+      "email": "constan100",
+      "password": "123456789",
+      "id": 2
+    },
+    {
+      "username": "hrairi06",
+      "fullname": "mahdi hrairi",
+      "email": "constan10",
+      "password": "123456789",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "first_name": "",
+      "last_name": "",
+      "email": "constan100"
+    },
+    {
+      "username": "yessine",
+      "fullname": "fghjkl",
+      "email": "constan100",
+      "password": "789",
+      "id": 5
+    },
+    {
+      "username": "d",
+      "fullname": "d",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "username": "d",
+      "fullname": "a",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "username": "d",
+      "fullname": "d",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 12
+    },
+    {
+      "username": "jk",
+      "fullname": "hj",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 13
+    },
+    {
+      "username": "y",
+      "fullname": "h",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 14
+    },
+    {
+      "username": "d",
+      "fullname": "d",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 15
+    },
+    {
+      "username": "a",
+      "fullname": "z",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 16
+    },
+    {
+      "username": "a",
+      "fullname": "a",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 17
+    },
+    {
+      "username": "mahdi12",
+      "fullname": "mahdi hrairi",
+      "email": "hrairi06@gmail.com",
+      "password": "123",
+      "id": 18
+    },
+    {
+      "username": "mahdi123",
+      "fullname": "ghjk",
+      "email": "hrairi06",
+      "password": "123",
+      "id": 19
+    },
+    {
+      "username": "hjk",
+      "fullname": "hgjk",
+      "email": "hrairi06@g.com",
+      "password": "123",
+      "id": 20
+    },
+    {
+      "username": "hjk",
+      "fullname": "i",
+      "email": "hrairi06@",
+      "password": "123",
+      "id": 21
+    }
+  ],
+  "store": [
+    {
+      "id": 1,
+      "name": "Tunisia Mall",
+      "companyname": "Tunisiamall",
+      "address": "Lac 2",
+      "photos": "some comment",
+      "type": "shopping Mall",
+      "phone": "23 485 725",
+      "description": "More then 20 Stores exists in our mall ( Pull & Bear, Zara ...) "
+    },
+    {
+      "name": "hgjk",
+      "comapnyname": "",
+      "address": "hjk",
+      "photos": "hjk",
+      "phone": "",
+      "type": "Clothes Store",
+      "description": "85",
+      "id": 2
+    },
+    {
+      "name": "ytguhj",
+      "companyname": "",
+      "address": "ghjk",
+      "photos": "h",
+      "phone": "",
+      "type": "Clothes Store",
+      "description": "yui",
+      "id": 3
+    },
+    {
+      "name": "ujk",
+      "companyname": "",
+      "address": "uhj",
+      "photos": "a",
+      "phone": "",
+      "type": "Clothes Store",
+      "description": "75",
+      "id": 4
+    },
+    {
+      "name": "hjkl",
+      "companyname": "",
+      "address": "uij",
+      "photos": "C:\\fakepath\\2.jpg",
+      "phone": "",
+      "type": "Clothes Store",
+      "description": "85",
+      "id": 5
+    },
+    {
+      "name": "iujk",
+      "companyname": "",
+      "address": "ijk",
+      "photos": "C:\\fakepath\\2.jpg",
+      "phone": "",
+      "type": "Clothes Store",
+      "description": "96",
+      "id": 6
+    },
+    {
+      "name": "mall",
+      "companyname": "",
+      "address": "ariana",
+      "photos": "",
+      "phone": "",
+      "type": "Makeup Store",
+      "description": "55",
+      "id": 7
+    },
+    {
+      "name": "jkl",
+      "companyname": "",
+      "address": "klm",
+      "photos": "C:\\fakepath\\125245230_2828559164136712_7265511957076426436_n.jpg",
+      "phone": "",
+      "type": "Makeup Store",
+      "description": "74",
+      "id": 8
+    },
+    {
+      "name": "jlk",
+      "companyname": "",
+      "address": "jl",
+      "photos": {},
+      "phone": "",
+      "type": "Clothes Store",
+      "description": "jkl",
+      "id": 9
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

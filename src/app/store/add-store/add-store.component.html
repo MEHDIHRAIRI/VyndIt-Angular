@@ -1,0 +1,61 @@
+
+<app-nav-default></app-nav-default>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container register" style="height: 100vh" >
+                <div class="row">
+                    <div class="col-md-3 register-left" style="margin-top: 170px; ">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Add your Store from here</h3>
+                    </div>
+                    <div class="">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading" style="color: white;">Add Store</h3>
+                                <div class="row register-form">
+                                    <form [formGroup]="form" (ngSubmit)="submit()" >
+                                    <div > 
+                                        <div class="form-group">
+                                            <input type="text" style="width: 500px;" class="form-control" formControlName="name" placeholder="Store Name*" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" formControlName="companyname " class="form-control" placeholder="Company Name*" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" formControlName="address" placeholder="Adress*" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="file" class="form-control" id="myfile" #myfile formControlName="photos" name="myfile" [(ngModel)]="file" (change)="OnFileselected($event)">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" formControlName="description" name="Description" class="form-control" placeholder="Phone Number*" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" formControlName="type">
+                                                <option class="hidden"  selected disabled>Type</option>
+                                                <option>Clothes Store</option>
+                                                <option>Makeup Store</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter Your Description*" value="" />
+                                        </div>
+                                        <div >
+                                        <input type="submit" class="btn btn-primary" style=" text-align: center;margin-left: 130px; width: 200px; background-color: yellowgreen; border-radius: 50px;"  (click)="upload()"  value="Submit"/>
+                                    </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>

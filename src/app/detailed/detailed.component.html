@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">VyndIt</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['add/user']">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+        Hello, <a id="username"  [routerLink]="['/profile']"></a><a style="margin-left: 15px;"  [routerLink]="['/']">Logout</a>
+        <p #name ></p>
+    </div>
+  </div>
+</nav>*
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">{{store.name}}
+      <small>{{store.companyname}}</small>
+    </h1>
+  
+    <!-- Portfolio Item Row -->
+    <div class="row">
+  
+      <div class="col-md-8">
+        <img class="img-fluid" src="https://media.istockphoto.com/photos/clothes-shop-interior-picture-id901863672?k=6&m=901863672&s=612x612&w=0&h=-_sWo8B6OJRaj4OuwblW8ytajBnBY_UMuaXGjr95wrE= " alt="Store Photo">
+      </div>
+  
+      <div class="col-md-4">
+        <h3 class="my-3">Store Description</h3>
+        <p>{{store.description}}</p>
+        <h3 class="my-3">Project Details</h3>
+        <ul>
+          <li>Address:  {{store.address}}</li>
+          <li>Type:  {{store.type}}</li>
+          <li>Phone:  {{store.phone}}</li>
+        </ul>
+      </div>
+      
+     
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+
+    </div>
+    <!-- /.row -->
+    
+  </div>
